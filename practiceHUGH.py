@@ -11,8 +11,11 @@ def getNRandom(n):
     return randlist
 
 def multiplyRandom(numbers):
-	'''takes in a list of n numbers and returns the product of the numbers'''
-    pass
+    '''takes in a list of n numbers and returns the product of the numbers'''
+    product = 1
+    for num in numbers:
+        product = product*num
+    return product
 
 def main():
 	print(multiplyRandom(getNRandom(10))
